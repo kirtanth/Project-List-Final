@@ -1,0 +1,37 @@
+<div class="container">
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Front</th>
+                <th scope="col">Back</th>
+                <th scope="col">Complited</th>
+                <th scope="col">Link</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of dataList">
+            <tr class="table-success" *ngIf="item.complited">
+                <th scope="row">{{item.position}}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.front}}</td>
+                <td>{{item.back}}</td>
+                <td>{{item.complited}}</td>
+                <td><a *ngIf="item.link " [href]="item.link">Github Link</a></td>
+
+            </tr>
+            <tr class="table-danger" *ngIf="item.complited==false">
+                <th scope="row">{{item.position}}</th>
+                <td>{{item.name}}</td>
+                <td>{{item.front}}</td>
+                <td>{{item.back}}</td>
+                <td>{{item.complited}}</td>
+                <td>Link after Completing Project</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,30 @@
+<html>
+  <head></head>
+  <body>
+  <div class="jumbotron ">
+  <br>
+<p class="h3"><mark> Angular Services :</mark></p><br>
+<p  class="h5">Add Service :</p>
+<p>The Tour of Heroes HeroesComponent is currently getting and displaying fake data.
+  <br>
+  After the refactoring in this tutorial, HeroesComponent will be lean and focused on
+  supporting the view. It will also be easier to unit-test with a mock service.</p>
+
+  <p class="h5">Why services:</p>
+  <p>Components shouldn't fetch or save data directly and they certainly shouldn't
+     knowingly present fake data. They should focus on presenting data and delegate
+     data access to a service.</p>
+     <br>
+     In this tutorial, you'll create a HeroService that all application classes can use
+     to get heroes. Instead of creating that service with the new keyword, you'll rely on
+     Angular dependency injection to inject it into the HeroesComponent constructor.
+     <hr><p>Services are a great way to share information among classes that don't know each other.
+    You'll create a MessageService and inject it in two places.</p>
+     1. Inject in HeroService, which uses the service to send a message.
+     <br>
+      2.Inject in MessagesComponent, which displays that message, and also
+      displays the ID when the user clicks a hero.
+</div>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+}
+
+.success {
+    background-color: green;
+}
+
+.danger {
+    background-color: red;
+}
+
+div {
+    width: 100%;
+}
